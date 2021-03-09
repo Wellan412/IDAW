@@ -1,28 +1,28 @@
 body{
-    
-    background-color: blanchedalmond;
+    background-color: grey;
 }
 
-a{
-    color: green;
-}
 
-#image1{
+
+
+.image{
     display: flex;
-    left:500px;
+    text-align: right;
     width: 120px;
     height: 160px;
  
 }
-
+.Titre{
+    flex-basis:80%;
+}
 .menu{
-color: hotpink;
 text-align: center;
 }
-
-.menu  a{
-    color: blue;
+.bouton{
+    background-color: rgb(145, 153, 38);
 }
+
+
 
 p{
     font-size: 16px;
@@ -31,12 +31,12 @@ p{
 
 h1 {
     text-align: center;
-    color: blue;
+    color : black;
     font-size: 32px;
 }
 
 h2 {
-    color:blue;
+    color: black;
     font-style: italic;
     text-align: center;
 }
@@ -45,8 +45,9 @@ h2 {
     display:flex;
     flex-direction: row;
     width : 100%;
-    background-color: slategrey;
+   
 }
+
 
 .Conteneur{
     display: flex;
@@ -57,20 +58,18 @@ h2 {
 .Eltflex1{
     
     width : 250px;
-    background-color: rgb(255, 115, 0);
     
 }
 
 
 .Contenu{
+    display:flex;
+    flex-direction: column;
     flex-basis: 100%;
 }
 
 .pied{
     flex: 1 100%;
     text-align: center;
-    color: blue;
     font-size: 32px;
-    background-color: springgreen;
-
 }
