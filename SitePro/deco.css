@@ -20,6 +20,9 @@ text-align: center;
 }
 .bouton{
     background-color: rgb(145, 153, 38);
+    width:150px;
+    height: 50px;
+
 }
 
 
