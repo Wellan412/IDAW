@@ -12,6 +12,7 @@ body{
     height: 300px;
  
 }
+
 .Titre{
     flex-basis:80%;
 }
@@ -53,6 +54,11 @@ h2 {
     flex-direction: row;
     width : 100%;
    
+}
+.Titre p{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 

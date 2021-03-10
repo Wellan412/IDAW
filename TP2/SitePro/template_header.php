@@ -16,7 +16,7 @@
         <div class="Titre"> 
             <h1> Site Professionnel de Hugo Resseguier </h1> 
             <?php 
-            echo date("d/m/Y");
+            echo "<p>".date("d/m/Y")."</p>";
             ?>
         </div>
        
