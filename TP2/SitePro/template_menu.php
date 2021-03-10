@@ -5,6 +5,7 @@
        <button class="bouton"><a href="index.php">Accueil</a></button><br>
        <button class="bouton"><a href="cv.php">CV</a></button><br>
        <button class="bouton"><a href="projets.php">Projets</a></button><br>
+       <button class="bouton"><a href="infos-techniques.php">Infos Techniques</a></button><br>
       
        
    </nav>
