@@ -25,6 +25,14 @@ text-align: center;
     height:50px;
 
 }
+.boutoncourant{
+    background-color: rgb(119, 98, 238);
+    font-style: italic;
+    width:150px;
+    height:50px;
+
+}
+
 
 .bandeau{
     text-align: center;

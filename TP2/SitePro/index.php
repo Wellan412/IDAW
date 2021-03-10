@@ -2,8 +2,12 @@
 require_once('template_header.php') ?>
 
 <div class="Conteneur">
-<?php require_once("template_menu.php") ?>
-
+<div class="Eltflex1"> 
+<?php
+ require_once("template_menu.php");
+ renderMenuToHTML('index');
+?>
+</div>
 <div class="Contenu">
     <div class="bandeau">
          <h2>Acceuil</h1>
