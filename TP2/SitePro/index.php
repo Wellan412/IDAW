@@ -25,10 +25,11 @@ require_once('template_header.php') ?>
 
     ?>
     
-    <div class="pied">
-    <footer>Merci de votre visite, n'hésitez pas à revenir me voir !</footer>
+    
 </div>
 </div>
+
+<?php require_once("template_footer.php") ?>
 
 </div> 
 
