@@ -8,8 +8,8 @@ $mymenu = array(
 'cv' => array( 'CV' ),
 'projets' => array('Mes Projets')
 );
-echo "<h1> MENU </h1>";
-// ...
+
+// boucle affichant un bouton par page selon l'ID de la page avec un style css différent pour l'ID de la page courante
 foreach($mymenu as $pageId => $pageParameters) {
 if($pageId==$currentPageId){
 echo "<button class=\"boutoncourant\"><a href=\"".$pageId.".php\">".$pageParameters[0]."</a></button><br>";
