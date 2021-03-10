@@ -1,17 +1,20 @@
 <?php
 require_once("template_header.php");
 require_once("template_menu.php");
-$currentPageId = 'accueil';
+$currentPageId='index';
+$id= 'accueil';
 if(isset($_GET['page'])) {
-$currentPageId = $_GET['page'];
+    $id = $_GET['page'];
 }
 renderMenuToHTML($currentPageId);
 ?>
+
 <div class="Contenu">
+
 <?php
-$pageToInclude = $currentPageId . ".php";
-if(is_readable($pageToInclude))
-require_once($pageToInclude);
+ $pageToInclude = $id . ".php";
+ if(is_readable($pageToInclude))
+    require_once($pageToInclude);
 else
 require_once("error.php");
 ?>
@@ -20,10 +23,10 @@ require_once("error.php");
 <?php
 require_once("template_footer.php");
 ?>
- 
-    
-   
-   
+
+
+
+
 
 </body>
 </html>
