@@ -10,7 +10,7 @@
     if(isset($_GET['page'])) {
         $currentPageId = $_GET['page'];
     }
-    renderMenuToHTML($currentPageId);
+    renderMenuToHTML($currentPageId,$currentlang);
 ?>
 
 <div class="Contenu">
