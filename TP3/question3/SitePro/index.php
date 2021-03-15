@@ -1,5 +1,13 @@
 
 <?php
+// session_start();
+$login = "anonymous";
+$errorText = "";
+$successfullyLogged = false;
+$tryLogin = '';
+// $_SESSION["login"] = $login;
+// $_SESSION["favanimal"] = "cat";
+
 // on simule une base de données
 $users = array(
     // login => password
@@ -7,10 +15,7 @@ $users = array(
     'yoda' => 'maitrejedi',
     'Wellan_412' => 'blabla' );
 
-$login = "anonymous";
-$errorText = "";
-$successfullyLogged = false;
-$tryLogin = '';
+
 
 if(isset($_POST['login']) && isset($_POST['password'])) {
     $tryLogin=$_POST['login'];

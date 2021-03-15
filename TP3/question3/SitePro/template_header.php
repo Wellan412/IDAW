@@ -1,9 +1,16 @@
 <?php
+
 function findstyle(){
     $stylecss="deco.css";
-if(isset($_COOKIE['stylecss'])){
-    $stylecss = $_COOKIE['stylecss'];
-}
+    if(isset($_COOKIE['stylecss'])){
+        $stylecss = $_COOKIE['stylecss'];
+    }
+
+    if(isset($_POST['css'])){
+            $stylecss=$_POST['css'];
+            setcookie("stylecss" , $stylecss);
+    }
+        
     echo $stylecss;
 }
 ?>
