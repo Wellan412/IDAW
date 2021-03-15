@@ -50,11 +50,6 @@
                      </select>
                      <input type="submit" value="Appliquer" />
                  </form>
-                 <?php
-                 if(isset($_POST['css'])){
-                     $value=$_POST['css'];
-                     setcookie("stylecss" , $value);
-                 }
-                 ?>   
+                  
         
 

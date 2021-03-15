@@ -15,3 +15,4 @@
     </tr>
     </table>
 </form>
+<button class="bouton"><a href="index.php?disconnect=on"> Se déconnecter</a> </button>
