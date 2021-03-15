@@ -2,8 +2,30 @@ body{
     background-color: rgb(187, 178, 178);
 }
 
+.CV{
+    display: flex;
+}
+.tableCV{
+    text-align: center;
+    
 
 
+
+}
+
+.colonne1{
+    width:25%;
+    background-color: grey ;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+.colonne2{
+    width:75%;
+    background-color: rgb(161, 125, 125) ;
+    padding: 10px;
+}
 
 .image{
     display: flex;
@@ -24,7 +46,7 @@ body{
     flex-basis:80%;
 }
 .menu{
-text-align: center;
+    text-align: center;
 }
 .bouton{
     text-align: center;
@@ -51,11 +73,19 @@ text-align: center;
 }
 .blang {
     text-align: center;
-    background-color: rgb(95, 216, 125);
-    font-style: italic;
+    background-color: rgb(98, 217, 238);
+
     width:75px;
     height:50px;
 }
+.blangcourant {
+    text-align: center;
+    background-color: rgb(119, 98, 238);
+   
+    width:75px;
+    height:50px;
+}
+
 
 
 .bandeau{
@@ -79,6 +109,19 @@ h1 {
 h2 {
     color: black;
     text-align: center;
+}
+
+h3{
+    color: black;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+h4{
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .haut{
@@ -120,3 +163,4 @@ h2 {
     text-align: center;
     font-size: 32px;
 }
+

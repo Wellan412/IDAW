@@ -10,6 +10,8 @@
         <br>
         <h3>Projets Passés</h3>
         <br>
+        <h4> Toutes En Règles !<h4>
+            <p> Projet visant à améliorer l'accès aux protections hygèniques pour els femmes e situation de précarité menstruelle <p>
         <h3>Projets En cours</h3>
         <br>
         <h3>Projets Futurs</h3>

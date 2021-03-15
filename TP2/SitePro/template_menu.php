@@ -11,10 +11,19 @@
                      'projets' => array('Mes Projets'),
                      'contact' => array ('Me Contacter')
                      );
-              echo "<div class=\"boutonlangue\">";
-              echo "<button class=\"blang\"><a href=\"http://localhost/IDAW/TP2/SitePro/index.php?page=".$currentPageId."&lang=en\"> <img id=\"imagelang\" src=\"images/drapeauen.jpg\" > </a></button>";
-              echo "<button class=\"blang\"><a href=\"http://localhost/IDAW/TP2/SitePro/index.php?page=".$currentPageId."&lang=fr\"> <img id=\"imagelang\" src=\"images/drapeaufr.jpg\" alt=\"photo de Hugo Resseguier\"> </a></button>";
-              echo "</div>";
+              if($currentlang=='en'){
+                     echo "<div class=\"boutonlangue\">";
+                     echo "<button class=\"blangcourant\"><a href=\"http://localhost/IDAW/TP2/SitePro/index.php?page=".$currentPageId."&lang=en\"> <img id=\"imagelang\" src=\"images/drapeauen.jpg\" > </a></button>";
+                     echo "<button class=\"blang\"><a href=\"http://localhost/IDAW/TP2/SitePro/index.php?page=".$currentPageId."&lang=fr\"> <img id=\"imagelang\" src=\"images/drapeaufr.jpg\" alt=\"photo de Hugo Resseguier\"> </a></button>";
+                     echo "</div>";
+              }
+              elseif($currentlang=='fr'){
+                     echo "<div class=\"boutonlangue\">";
+                     echo "<button class=\"blang\"><a href=\"http://localhost/IDAW/TP2/SitePro/index.php?page=".$currentPageId."&lang=en\"> <img id=\"imagelang\" src=\"images/drapeauen.jpg\" > </a></button>";
+                     echo "<button class=\"blangcourant\"><a href=\"http://localhost/IDAW/TP2/SitePro/index.php?page=".$currentPageId."&lang=fr\"> <img id=\"imagelang\" src=\"images/drapeaufr.jpg\" alt=\"photo de Hugo Resseguier\"> </a></button>";
+                     echo "</div>";
+              }
+              
              
               // boucle affichant un bouton par page selon l'ID de la page avec un style css différent pour l'ID de la page courante
               foreach($mymenu as $pageId => $pageParameters) {
