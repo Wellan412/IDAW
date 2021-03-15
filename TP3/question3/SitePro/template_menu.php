@@ -36,16 +36,17 @@
                      
                             
               }
+              require_once('login.php');
               echo "</div>";
 
        }
 
 
         ?>
-        <form id="style_form" action="index.php" method="POST"> 
+         <form id="style_form" action="index.php" method="POST"> 
                      <select name="css">
                          <option value="deco.css">Normal</option>
-                         <option value="deco2.css">Dark</option>
+                         <option value="deco2.css">Rose</option>
                      </select>
                      <input type="submit" value="Appliquer" />
                  </form>
@@ -54,5 +55,6 @@
                      $value=$_POST['css'];
                      setcookie("stylecss" , $value);
                  }
-                 ?>    
+                 ?>   
+        
 

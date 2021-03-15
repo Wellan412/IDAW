@@ -26,7 +26,6 @@ if(isset($_COOKIE['stylecss'])){
             <h1> Site Professionnel de Hugo Resseguier </h1> 
             <?php 
             echo "<p>".date("d/m/Y")."</p>";
-            print_r($_POST);
             print_r($_COOKIE);
 
             ?>

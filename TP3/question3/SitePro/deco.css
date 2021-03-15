@@ -52,7 +52,7 @@ body{
     text-align: center;
   
     background-color: rgb(98, 217, 238);
-    width:150px;
+    width:100%;
     height:50px;
 
 }
@@ -61,7 +61,7 @@ body{
     text-align: center;
     background-color: rgb(119, 98, 238);
     font-style: italic;
-    width:150px;
+    width:100%;
     height:50px;
 
 }
@@ -75,14 +75,14 @@ body{
     text-align: center;
     background-color: rgb(98, 217, 238);
 
-    width:75px;
+    width:50%;
     height:50px;
 }
 .blangcourant {
     text-align: center;
     background-color: rgb(119, 98, 238);
    
-    width:75px;
+    width:50%;
     height:50px;
 }
 
