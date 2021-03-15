@@ -2,9 +2,9 @@
          <h2>Contact</h1>
 </div>
         
-<p> Vous trouverez ici une liste des façons de me contacter </p>
+<p> You will find here a list of ways to contact me </p>
 <ul>
-    <li><p>Numéro de telepone : </p> </li>
-    <li><p>Adresse mail :</p> </li>
+    <li><p>Phone number : </p> </li>
+    <li><p>Mail address :</p> </li>
 </ul>
 
