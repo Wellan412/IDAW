@@ -23,15 +23,20 @@
 
             <td><input type="text" id="rmp" name="remarques"></td>
   
-        </tr>       
+        </tr>   
+        <tr>
+            <th></th>
+            <td><input type="submit" id="Submit" value="Soumettre" /></td>
+    </tr>    
         </table>
 </form>
 
 
 
-
-<!-- <script>
+<!-- 
+<script>
     function onFormSubmit() {
+
     // prevent the form to be sent to the server
     event.preventDefault();
    
