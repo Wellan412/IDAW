@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<table class="tableCV">
+    <tbody id="tableau">
+        <tr class="tableheader">
+            <td class="c1"> Nom </td>
+            <td class="c2"> Prénom </td>
+            <td class="c3"> Date de Naissance</td>
+            <td class="c4"> J'aime les cours Web </td>
+            <td class="c5"> Remarques </td>
+            <td class="c6"> CRUD</td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+<script> alert('ça marche') ; </script>
+
+
+<form onsubmit="onFormSubmit();" autocomplete="off"> 
+<table>
+<tr>
+    <th id='mandatory'>Nom</th>
+    <td><input type="text" id="nom" name="Nom"></td>
+</tr>
+<tr>
+    <th>Prénom</th>
+    <td><input type="text" id="prenom" name="prenom"></td>
+</tr>
+<tr>
+    <th>Date de Naissance</th>
+    <td><input type="text" id="date" name="date" placeholder="dd/mm/YYYY"></td>
+</tr>
+<tr>
+    <th>Adore le cours</th>
+
+    <td><input type="checkbox" id="cours" name="adorecours"></td>
+
+</tr>
+<tr>
+    <th>Remarques</th>
+
+    <td><input type="text" id="rmq" name="remarques"></td>
+
+</tr>   
+<tr>
+    <th></th>
+    <td><input type="submit" id="Submit" value="Soumettre" /></td>
+</tr>    
+</table>
+</form>
+
+<p> Texte </p>
+<script> 
+document.querrySelector('p').textContent += ' j\'ai réussi à modifier le texte '; 
+</script>
+
+<script>
+function onFormSubmit() {
+let nom = document.getElementById('nom');
+let prenom = document.getElementById('prenom');
+let date = document.getElementById('date');
+let cours = document.getElementById('cours');
+let rmq = document.getElementById('rmq');
+if( nom != ""){
+    document.getElementById('tableau').innerHTML += "<tr> <td class='c1'> "+ nom +"</td> <td class='c2'>" + prenom +" </td> <td class='c3'> "+date+"</td> <td class='c4'>" +cours+" </td> <td class='c6'>" + rmq  +"</td> <td class='c6'> CRUD</td> </tr>" ;
+}
+else{
+    document.getElementById('mandatory').innerText += ' OBLIGATOIRE';
+}
+
+// prevent the form to be sent to the server
+event.preventDefault();
+
+}
+</script> 
