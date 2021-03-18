@@ -64,11 +64,13 @@ console.log(ptest);
             document.getElementById('tableau').innerHTML += "<tr> <td class='c1'> "+ nom +"</td> <td class='c2'>" + prenom +" </td> <td class='c3'> "+date+"</td> <td class='c4'>" +cours+" </td> <td class='c6'>" + rmq  +"</td> <td class='c6'> <a onclick='delete();'> Delete </a> <a onclick='edit();'> Edit </a></td> </tr>" ;
         }
         else{
-            document.getElementById('mandatory').innerText += ' OBLIGATOIRE';
+            document.getElementById('mandatory').innerText = '  Nom OBLIGATOIRE';
         }
 
     // prevent the form to be sent to the server
     event.preventDefault();
    
     }
+
+    
 </script> 
