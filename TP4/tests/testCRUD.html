@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
 </table>
 
 
-<script> alert('ça marche') ; </script>
+
 
 
 <form onsubmit="onFormSubmit();" autocomplete="off"> 
@@ -61,27 +62,62 @@
 </table>
 </form>
 
-<p> Texte </p>
-<script> 
-document.querrySelector('p').textContent += ' j\'ai réussi à modifier le texte '; 
-</script>
 
 <script>
+function Utilisateur(n,p,d,c,r){
+    this.nom = n ;
+    this.prenom=p;
+    this.date=d;
+    this.cours=c;
+    this.remarque=r;
+}
+function Personne(personne,clé){
+    this.infos= personne;
+    this.clé=clé
+}
+let Tab=new Array();
+
 function onFormSubmit() {
-let nom = document.getElementById('nom');
-let prenom = document.getElementById('prenom');
-let date = document.getElementById('date');
-let cours = document.getElementById('cours');
-let rmq = document.getElementById('rmq');
-if( nom != ""){
-    document.getElementById('tableau').innerHTML += "<tr> <td class='c1'> "+ nom +"</td> <td class='c2'>" + prenom +" </td> <td class='c3'> "+date+"</td> <td class='c4'>" +cours+" </td> <td class='c6'>" + rmq  +"</td> <td class='c6'> CRUD</td> </tr>" ;
+    let n = document.getElementById('nom').value;
+    if( n != ""){
+        let clé= findkey();
+        let p = document.getElementById('prenom').value;
+        let d= document.getElementById('date').value;
+        let c= document.getElementById('cours').value;
+        let r = document.getElementById('rmq').value;
+        let util= new Utilisateur(n,p,d,c,r);
+        let personne =  new Personne(util,clé);
+        Tab.push(personne);
+        document.getElementById('tableau').innerHTML += "<tr> <td class='c1'> "+ util.nom +
+            "</td> <td class='c2'>"+util.prenom+
+            " </td> <td class='c3'> "+util.date+
+            "</td> <td class='c4'>"+util.cours+
+            " </td> <td class='c6'>"+ util.rmq+
+            "</td> <td class='c6'> <button onclick='deleteligne("+ (personne.clé+1) +
+            ");'> Delete</button> <button onClick='edit("+personne.clé+
+            ");'> Edit </button></td> </tr>" ;
+    } else{
+       document.getElementById('mandatory').innerText = 'NOM OBLIGATOIRE';
+    }
+    // prevent the form to be sent to the server
+    event.preventDefault();
 }
-else{
-    document.getElementById('mandatory').innerText += ' OBLIGATOIRE';
+function deleteligne(value){
+
+    document.getElementById("tableau").deleteRow(value);
+    Tab.deleteRow(value);
 }
 
-// prevent the form to be sent to the server
-event.preventDefault();
-
+function findkey(){
+    let result = 0;
+    if(Tab.length>0){
+        result = Tab[0].clé;
+        for(let i = 0; i < Tab.length; i++)
+            if(Tab[i].clé>result){
+                result=Tab[i].clé
+            }
+        result+=1;
+        }
+    return(result);
 }
-</script> 
+    </script> 

@@ -48,10 +48,6 @@
 </form>
 
 <p id="ptest"> Texte </p>
-<script> 
-let ptest = document.getElementById('ptest').textContent = ' j\'ai réussi à modifier le texte '; 
-console.log(ptest);
-</script>
 
 <script>
     function onFormSubmit() {
@@ -61,7 +57,7 @@ console.log(ptest);
         let cours = document.getElementById('cours').value;
         let rmq = document.getElementById('rmq').value;
         if( nom != ""){
-            document.getElementById('tableau').innerHTML += "<tr> <td class='c1'> "+ nom +"</td> <td class='c2'>" + prenom +" </td> <td class='c3'> "+date+"</td> <td class='c4'>" +cours+" </td> <td class='c6'>" + rmq  +"</td> <td class='c6'> <a onclick='delete();'> Delete </a> <a onclick='edit();'> Edit </a></td> </tr>" ;
+            document.getElementById('tableau').innerHTML += "<tr> <td class='c1'> "+ nom +"</td> <td class='c2'>" + prenom +" </td> <td class='c3'> "+date+"</td> <td class='c4'>" +cours+" </td> <td class='c6'>" + rmq  +"</td> <td class='c6'> <button><a onclick='delete();'> Delete </a></button> <button> <a onclick='edit();'> Edit </a></button></td> </tr>" ;
         }
         else{
             document.getElementById('mandatory').innerText = '  Nom OBLIGATOIRE';
@@ -70,6 +66,10 @@ console.log(ptest);
     // prevent the form to be sent to the server
     event.preventDefault();
    
+    }
+
+    function delete(){
+        let ptest = document.getElementById('ptest').textContent = ' j\'ai réussi à modifier le texte '; 
     }
 
     
